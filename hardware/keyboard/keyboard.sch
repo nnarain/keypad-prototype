@@ -1,0 +1,226 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3600 3750 1200 1150
+U 5FB1A6F6
+F0 "KeyMatrix" 50
+F1 "keymatrix.sch" 50
+$EndSheet
+Text HLabel 4800 4150 0    50   Input ~ 0
+COL1
+Text HLabel 4800 4250 0    50   Input ~ 0
+COL2
+Text HLabel 4800 4350 0    50   Input ~ 0
+COL3
+Text HLabel 4800 4450 0    50   Input ~ 0
+ROW1
+Text HLabel 4800 4550 0    50   Input ~ 0
+ROW2
+Text HLabel 4800 4650 0    50   Input ~ 0
+ROW3
+Text HLabel 4800 4000 0    50   Input ~ 0
+PWR
+$Comp
+L kbd:ProMicro U1
+U 1 1 5FB1ED7A
+P 6650 4100
+F 0 "U1" H 6650 5043 60  0000 C CNN
+F 1 "ProMicro" H 6650 4937 60  0000 C CNN
+F 2 "kbd:ProMicro_v3" H 6650 4831 60  0000 C CNN
+F 3 "" H 6750 3050 60  0000 C CNN
+	1    6650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5FB206E4
+P 7450 3850
+F 0 "#PWR06" H 7450 3700 50  0001 C CNN
+F 1 "+5V" V 7450 4050 50  0000 C CNN
+F 2 "" H 7450 3850 50  0001 C CNN
+F 3 "" H 7450 3850 50  0001 C CNN
+	1    7450 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5FB21152
+P 7450 3650
+F 0 "#PWR05" H 7450 3400 50  0001 C CNN
+F 1 "GND" V 7450 3450 50  0000 C CNN
+F 2 "" H 7450 3650 50  0001 C CNN
+F 3 "" H 7450 3650 50  0001 C CNN
+	1    7450 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5FB21996
+P 4950 4000
+F 0 "#PWR01" H 4950 3850 50  0001 C CNN
+F 1 "+5V" V 4950 4200 50  0000 C CNN
+F 2 "" H 4950 4000 50  0001 C CNN
+F 3 "" H 4950 4000 50  0001 C CNN
+	1    4950 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 4150 5950 4150
+Wire Wire Line
+	5950 4250 4800 4250
+Wire Wire Line
+	4800 4350 5950 4350
+Wire Wire Line
+	5950 4450 4800 4450
+Wire Wire Line
+	4800 4550 5950 4550
+Wire Wire Line
+	5950 4650 4800 4650
+$Comp
+L power:GND #PWR02
+U 1 1 5FB2513A
+P 5800 3750
+F 0 "#PWR02" H 5800 3500 50  0001 C CNN
+F 1 "GND" V 5800 3550 50  0000 C CNN
+F 2 "" H 5800 3750 50  0001 C CNN
+F 3 "" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 3950 5400 3950
+Wire Wire Line
+	5350 4050 5950 4050
+$Comp
+L kbd:OLED OL1
+U 1 1 5FB2E94F
+P 6700 5500
+F 0 "OL1" H 7328 5569 51  0000 L CNN
+F 1 "OLED" H 7328 5479 47  0000 L CNN
+F 2 "kbd:OLED_v2" H 6700 5600 60  0001 C CNN
+F 3 "" H 6700 5600 60  0001 C CNN
+	1    6700 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5250 5400 5250
+Wire Wire Line
+	5400 5250 5400 3950
+Wire Wire Line
+	5350 4050 5350 5400
+Wire Wire Line
+	5350 5400 5950 5400
+Wire Wire Line
+	7350 3650 7450 3650
+Wire Wire Line
+	7350 3850 7450 3850
+$Comp
+L power:+5V #PWR03
+U 1 1 5FB33CBB
+P 5800 5550
+F 0 "#PWR03" H 5800 5400 50  0001 C CNN
+F 1 "+5V" V 5800 5750 50  0000 C CNN
+F 2 "" H 5800 5550 50  0001 C CNN
+F 3 "" H 5800 5550 50  0001 C CNN
+	1    5800 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5FB33CC1
+P 5800 5700
+F 0 "#PWR04" H 5800 5450 50  0001 C CNN
+F 1 "GND" V 5800 5500 50  0000 C CNN
+F 2 "" H 5800 5700 50  0001 C CNN
+F 3 "" H 5800 5700 50  0001 C CNN
+	1    5800 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 5550 5800 5550
+Wire Wire Line
+	5800 5700 5950 5700
+Wire Wire Line
+	5800 3750 5850 3750
+Wire Wire Line
+	5950 3850 5850 3850
+Wire Wire Line
+	5850 3850 5850 3750
+Connection ~ 5850 3750
+Wire Wire Line
+	5850 3750 5950 3750
+Wire Wire Line
+	4950 4000 4800 4000
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5FB45757
+P 4600 3100
+F 0 "J1" H 4600 2650 50  0000 C CNN
+F 1 "Conn_01x06" V 4473 2712 50  0001 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4600 3100 50  0001 C CNN
+F 3 "~" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 4050 5350 3300
+Wire Wire Line
+	5350 3300 4800 3300
+Connection ~ 5350 4050
+Wire Wire Line
+	5400 3950 5400 3200
+Wire Wire Line
+	5400 3200 4800 3200
+Connection ~ 5400 3950
+Wire Wire Line
+	5450 3650 5450 3100
+Wire Wire Line
+	5450 3100 4800 3100
+Wire Wire Line
+	5450 3650 5950 3650
+Wire Wire Line
+	5500 3550 5500 3000
+Wire Wire Line
+	5500 3000 4800 3000
+Wire Wire Line
+	5500 3550 5950 3550
+$Comp
+L power:+5V #PWR0101
+U 1 1 5FB4E853
+P 4900 2900
+F 0 "#PWR0101" H 4900 2750 50  0001 C CNN
+F 1 "+5V" V 4900 3100 50  0000 C CNN
+F 2 "" H 4900 2900 50  0001 C CNN
+F 3 "" H 4900 2900 50  0001 C CNN
+	1    4900 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 2900 4900 2900
+Wire Wire Line
+	4800 2800 4900 2800
+$Comp
+L power:GND #PWR0102
+U 1 1 5FB4E859
+P 4900 2800
+F 0 "#PWR0102" H 4900 2550 50  0001 C CNN
+F 1 "GND" V 4900 2600 50  0000 C CNN
+F 2 "" H 4900 2800 50  0001 C CNN
+F 3 "" H 4900 2800 50  0001 C CNN
+	1    4900 2800
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
