@@ -1,3 +1,6 @@
 [submodule "hardware/keyboard/libraries/kbd"]
 	path = hardware/keyboard/libraries/kbd
 	url = https://github.com/foostan/kbd.git
+[submodule "hardware/keyboard/libraries/kicad-inventory"]
+	path = hardware/keyboard/libraries/kicad-inventory
+	url = https://github.com/nnarain/kicad-inventory.git
