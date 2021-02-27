@@ -4,3 +4,9 @@
 [submodule "hardware/keyboard/libraries/kicad-inventory"]
 	path = hardware/keyboard/libraries/kicad-inventory
 	url = https://github.com/nnarain/kicad-inventory.git
+[submodule "firmware/toolchain/cmake-avr-toolchain"]
+	path = firmware/toolchain/cmake-avr-toolchain
+	url = https://github.com/nnarain/cmake-avr-toolchain.git
+[submodule "firmware/src/external/ftl"]
+	path = firmware/src/external/ftl
+	url = https://github.com/nnarain/ftl.git
