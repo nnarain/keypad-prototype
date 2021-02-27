@@ -30,4 +30,5 @@ fp-info-cache
 
 hardware/keyboard/export/
 
-
+# Firmware
+firmware/build/
