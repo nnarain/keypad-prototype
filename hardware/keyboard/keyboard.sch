@@ -18,21 +18,14 @@ S 3600 3750 1200 1150
 U 5FB1A6F6
 F0 "KeyMatrix" 50
 F1 "keymatrix.sch" 50
+F2 "COL1" I R 4800 4150 50 
+F3 "COL2" I R 4800 4250 50 
+F4 "COL3" I R 4800 4350 50 
+F5 "ROW1" O R 4800 4450 50 
+F6 "ROW2" O R 4800 4550 50 
+F7 "ROW3" O R 4800 4650 50 
+F8 "PWR" I R 4800 4000 50 
 $EndSheet
-Text HLabel 4800 4150 0    50   Input ~ 0
-COL1
-Text HLabel 4800 4250 0    50   Input ~ 0
-COL2
-Text HLabel 4800 4350 0    50   Input ~ 0
-COL3
-Text HLabel 4800 4450 0    50   Input ~ 0
-ROW1
-Text HLabel 4800 4550 0    50   Input ~ 0
-ROW2
-Text HLabel 4800 4650 0    50   Input ~ 0
-ROW3
-Text HLabel 4800 4000 0    50   Input ~ 0
-PWR
 $Comp
 L kbd:ProMicro U1
 U 1 1 5FB1ED7A
@@ -77,8 +70,6 @@ F 3 "" H 4950 4000 50  0001 C CNN
 	1    4950 4000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4800 4150 5950 4150
 Wire Wire Line
 	5950 4250 4800 4250
 Wire Wire Line
@@ -223,4 +214,6 @@ F 3 "" H 4900 2800 50  0001 C CNN
 	1    4900 2800
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	4800 4150 5950 4150
 $EndSCHEMATC
