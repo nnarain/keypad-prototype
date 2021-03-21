@@ -29,6 +29,8 @@ fp-info-cache
 *.csv
 
 hardware/keyboard/export/
+hardware/keyboard/out/
 
 # Firmware
 firmware/build/
+build-assets/*
