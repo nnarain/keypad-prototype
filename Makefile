@@ -20,7 +20,7 @@ build-assets:
 # Generate documentation using `mdbook`
 book: build-assets
 	cp build-assets/ibom.html ./docs/src/_generated/
-	cp build-assets/blinds-controller.pdf ./docs/src/_generated/
+	cp build-assets/keyboard.pdf ./docs/src/_generated/
 	cd ./docs && mdbook build
 
 clean:
