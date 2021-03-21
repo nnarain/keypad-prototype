@@ -1,3 +1,10 @@
+/**
+  POC Firmware for macro keypad
+  @author Natesh Narain <nnaraindev@gmail.com>
+*/
+
+#include <Keyboard.h>
+
 #define COL1 4
 #define COL2 5
 #define COL3 6
@@ -11,7 +18,7 @@
 static const int COL_PINS[NUM_COLS] = {COL1, COL2, COL3};
 static const int ROW_PINS[NUM_ROWS] = {ROW1, ROW2, ROW3};
 
-static const int BUTTONS[NUM_COLS][NUM_ROWS] = { {7, 4, 1}, {8, 5, 2}, {9, 6, 3} };
+static const char BUTTONS[NUM_COLS][NUM_ROWS] = { {'7', '4', '1'}, {'8', '5', '2'}, {'9', '6', '3'} };
 
 void setup() {
   //pinMode(COL1, OUTPUT);
@@ -28,6 +35,7 @@ void setup() {
   }
 
   Serial.begin(115200);
+  Keyboard.begin();
 }
 
 void loop() {
@@ -41,8 +49,11 @@ void loop() {
       // Button pressed are a LOW signal
       if (digitalRead(ROW_PINS[row]) == LOW)
       {
-        Serial.print("Pressed ");
-        Serial.println(BUTTONS[col][row]);
+        Keyboard.press(BUTTONS[col][row]);
+      }
+      else
+      {
+        Keyboard.release(BUTTONS[col][row]);
       }
     }
 
